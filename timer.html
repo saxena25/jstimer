@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41608ea355.js" crossorigin="anonymous"></script>
+    <title>JS Timer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 250px;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+            padding: 10px;
+            background-color: rgb(232, 190, 154);
+            border-radius: 20px;
+        }
+        #displayTime{
+            font-size: 2em;
+            border: 0px solid black;
+            background-color: rgb(255, 81, 0);
+            color: #fff;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 20px;
+        }
+        #start, #stop, #reset{
+            border: none;
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 5px;
+        }
+        #start{
+            background-color: rgb(119, 194, 6);
+            color: #fff;
+        }
+        #stop{
+            background-color: rgb(235, 43, 43);
+            color: #fff;
+        }
+        #reset{
+            background-color: skyblue;
+            color: #fff;
+        }
+        #start:hover{
+            cursor: pointer;
+            color: blue;
+        }
+        #stop:hover{
+            cursor: pointer;
+            color: blue;
+        }
+        #reset:hover{
+            cursor: pointer;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>JS TIMER  <span> <i class="fa-solid fa-hourglass-end"></i></span></h1>
+        <h2 id="displayTime">0m : 0s</h2>
+        <div id="btn">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
